@@ -8,12 +8,17 @@
 </head>
 <body>
 
-  <img class="background" src="images/pattern-background-desktop.svg" alt="background">
+  <picture>
+    <source media="(max-width: 450px)" srcset="images/pattern-background-mobile.svg">
+    <img src="images/pattern-background-desktop.svg" alt="반응형 이미지">
+  </picture>
 
   <main class="card">
+
     <div class="img-box">
       <img src="images/illustration-hero.svg" alt="thumbnail" class="thumbnail">
     </div>
+  
     <div class="container">
     <h1>Order Summary</h1>
 
