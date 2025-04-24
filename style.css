@@ -10,7 +10,8 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Red Hat Display", sans-serif;}
+  font-family: "Red Hat Display", sans-serif;
+}
 
 body {
   margin: 0;
@@ -19,7 +20,7 @@ body {
 }
 
 .card {
-  width: 20rem;
+  width: 22rem;
   z-index: 1;
   background-color: #ffffff;
 
@@ -28,11 +29,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
 }
 
 .img-box > img {
@@ -41,22 +37,118 @@ body {
   border-top-left-radius: 10px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1.3rem ;
+}
+
+.container > *{
+  margin: 0;
+}
+
 h1 {
   color: var(--Dark-blue);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 900;
+  margin: 0;
 }
 
 .explain {
   text-align: center;
   font-size: 0.9rem;
   color: var(--Desaturated-blue);
+  line-height: 1.3rem;
 }
 
 .plan-box {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--Very-pale-blue);
+  border-radius: 10px;
+
   display: flex;
+  align-items: center;
+
 }
 
+.price-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plan-box > img {
+  margin-right: 1rem;
+}
+
+.title {
+ color: var(--Dark-blue);
+ font-size: 0.9rem;
+ font-weight: 900; 
+}
+
+.price {
+  color: var(--Desaturated-blue);
+  font-size: 0.9rem;
+}
+
+a {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.plan-box > .price-box > p {
+  margin: 0.15rem;
+  margin-right: 3rem;
+}
+
+button {
+  background-color: var(--Bright-blue);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 100%;
+
+  padding: 0.75rem 0;
+  border-radius: 10px;
+  border: none;
+
+  box-shadow: 0px 17px 10px hsla(245, 75%, 52%, 15%);
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 0.7;
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+.cancel {
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: var(--Desaturated-blue);
+}
+
+.cancel {
+  color: var(--Desaturated-blue);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.cancel:hover{
+  color: var(--Dark-blue);
+}
 
 
 
