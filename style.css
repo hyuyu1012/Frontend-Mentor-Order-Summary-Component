@@ -10,10 +10,7 @@
 
 * {
   box-sizing: border-box;
-}
-
-html {
-}
+  font-family: "Red Hat Display", sans-serif;}
 
 body {
   margin: 0;
@@ -22,8 +19,47 @@ body {
 }
 
 .card {
+  width: 20rem;
   z-index: 1;
-  width: 30rem;;
+  background-color: #ffffff;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
+
+.img-box > img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+h1 {
+  color: var(--Dark-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.explain {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--Desaturated-blue);
+}
+
+.plan-box {
+  display: flex;
+}
+
+
+
+
+
 
 
